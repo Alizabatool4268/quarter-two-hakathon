@@ -15,10 +15,6 @@ function page() {
            </span>
         </div> 
         <section className='w-screen overflow-x-hidden'>
-      <div className='w-full h-[70px] flex justify-start items-center ml-4 gap-1 xsm:text-sm'>
-        <p className='text-[#b0b0b0]'>Home /</p>
-        <p>Cart</p>
-      </div>
       <div className='grid grid-rows-4 gap-3'>
         <div className='h-[72px]'>
            <ul className='flex justify-around items-center font-bold text-[#1D3178] xsm:text-sm'>
