@@ -14,7 +14,7 @@ function page() {
               <p className='text-[#FB2E86]'>Contact Us</p>
            </span>
         </div>
-        <div className='flex justify-around items-center mt-14 mb-14'>
+        <div className='flex justify-around items-center mt-14 mb-14 sm:flex-col msm:flex-col ssm:flex-col xsm:flex-col'>
             <div>
                 <h1 className='text-[#151875] text-[36px] font-bold'>Information About us</h1>
                 <p className='text-sm text-[#8A8FB9]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices <br />
@@ -28,7 +28,7 @@ function page() {
             </div>
             <div>
                 <h1 className='text-[#151875] text-[36px] font-bold'>Contact Way</h1>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-2 xsm:flex-col ssm:flex-col'>
                 <span className='flex items-center'>
                     <GoDotFill className='text-[44px] text-[#5726DF]' />
                     <span className='text-[#8A8FB9]'>
@@ -44,7 +44,7 @@ function page() {
                     </span>
                 </span>
                 </div>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-2 xsm:flex-col ssm:flex-col'>
                 <span className='flex items-center'>
                     <GoDotFill className='text-[44px] text-[#FFB265]' />
                     <span className='text-[#8A8FB9]'>
@@ -66,23 +66,23 @@ function page() {
         <div className='flex justify-around items-center mb-11'>
             <div className='flex flex-col justify-center items-center gap-3'>
                 <span>
-                    <h1 className='text-[#151875] text-[36px] font-bold'>Get In Touch</h1>
-                    <p className='text-sm text-[#8A8FB9]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices <br />
+                    <h1 className='text-[#151875] text-[36px] xsm:text-[24px] font-bold'>Get In Touch</h1>
+                    <p className='text-sm text-[#8A8FB9] xsm:text-[10px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices <br />
                      tristique amet erat vitae eget dolor los vitae lobortis quis bibendum quam.</p>
                 </span>
-                <span className='flex gap-3 w-[534px] justify-between'>
-                    <input type="text" placeholder='Your Name*' className='h-[45px] w-[255px] border-[1px] border-solid border-black' />
-                    <input type="email" placeholder='Your E-mail' className='h-[45px] w-[255px] border-[1px] border-solid border-black' />
+                <span className='flex gap-3 w-[534px] justify-between xsm:justify-center msm:w-[400px] ssm:w-[300px] xsm:w-[270px]'>
+                    <input type="text" placeholder='Your Name*' className='h-[45px] w-[255px] border-[1px] border-solid border-black  ssm:w-[130px] xsm:w-[130px]' />
+                    <input type="email" placeholder='Your E-mail' className='h-[45px] w-[255px] border-[1px] border-solid border-black ssm:w-[130px] xsm:w-[130px]' />
                 </span>
                 <span>
-                    <input type="text" placeholder='Subject*' className=' w-[534px] h-[45px] border-[1px] border-solid border-black ' />
+                    <input type="text" placeholder='Subject*' className=' w-[534px] h-[45px] border-[1px] border-solid border-black msm:w-[400px] ssm:w-[300px] xsm:w-[270px] ' />
                 </span>
                 <span>
-                    <input type="text" placeholder='Type Your Messege*' className='h-[166px] w-[534px] border-[1px] border-solid border-black' />
+                    <input type="text" placeholder='Type Your Messege*' className='h-[166px] w-[534px] border-[1px] border-solid border-black msm:w-[400px] ssm:w-[300px] xsm:w-[270px]' />
                 </span>
-                <button className='bg-[#FB2E86] text-white h-[44px] w-[157px] rounded-sm'>Send Mail</button>
+                <button className='bg-[#FB2E86] text-white h-[44px] w-[157px] rounded-sm '>Send Mail</button>
             </div>
-            <div>
+            <div className='xsm:hidden ssm:hidden msm:hidden sm:hidden'>
               <Image height={500} width={500} alt='contactimage' src={"/Images/contact-page-img.png"}></Image>
             </div>
         </div>
