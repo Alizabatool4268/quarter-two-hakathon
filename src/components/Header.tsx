@@ -44,7 +44,7 @@ function Header() {
                 <Link href={"/"} className='hover:text-[#FB2E86]'>Pages </Link>
                 <Link href={"/"} className='hover:text-[#FB2E86]'>Products </Link>
                 <Link href={"/"} className='hover:text-[#FB2E86]'>Blog  </Link>
-                <Link href={"/"} className='hover:text-[#FB2E86]'>Shop </Link>
+                <Link href={"/Shop"} className='hover:text-[#FB2E86]'>Shop </Link>
                 <Link href={"/"} className='hover:text-[#FB2E86]'>Contact </Link>
              </div>
             </div>

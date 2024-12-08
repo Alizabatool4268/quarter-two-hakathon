@@ -42,6 +42,12 @@ export default function Home() {
     {id:21, image:"/Images/image 1171.png",heading:"Mini LCW Chair", price:"$56.00"},
     {id:22, image:"/Images/gray-chair.png",heading:"Mini LCW Chair", price:"$56.00"}
   ]
+
+  const latestBlog =[
+    {id:23, image:"/Images/bedroom-1.png", heading:"Top esssential Trends in 2021"},
+    {id:24, image:"/Images/bedroom-2.png", heading:"Top esssential Trends in 2021"},
+    {id:25, image:"/Images/bedroom-3.png", heading:"Top esssential Trends in 2021"},
+  ]
   return (
    <main>
      <Herosection />
@@ -230,10 +236,10 @@ export default function Home() {
        </div>
      </section>
      {/* top category */}
-     <section>
+     <section  className=" flex justify-center items-center flex-col">
       <h1 className="text-[42px] flex justify-center items-center font-bold text-[#151875] xsm:text-[28px]
        ssm:text-[28px] msm:text-[35px] ">Top Categories</h1> 
-       <div className="flex justify-around items-center xsm:flex-col ssm:flex-col msm:flex-col sm:flex-col">
+       <div className="grid grid-cols-4 grid-rows-1 md:grid-cols-2 md:grid-rows-2 xsm:grid-cols-1 xsm:grid-rows-4 ssm:grid-cols-1 ssm:grid-rows-4 msm:grid-cols-1 msm:grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 ">
          {topCategories.map((products)=>(
           <div className="h-[350px] w-[270px] flex flex-col justify-around items-center" key={products.id}>
             <span className="bg-[#31208A0D] h-[230px] w-[230px] rounded-[50%] flex justify-center items-center">
@@ -264,8 +270,31 @@ export default function Home() {
        <Image height={100} width={500} alt="brands" src={"/Images/image 1174.png"}></Image>
      </section>
      {/* latest blog */}
-     <section>
-      
+     <section className="mt-11 flex justify-around items-center flex-col">
+      <h1 className="text-[42px] flex justify-center items-center font-bold text-[#151875] xsm:text-[28px]
+       ssm:text-[28px] msm:text-[35px] ">Leatest Blog</h1>
+      <div className="flex justify-around items-center xsm:flex-col ssm:flex-col msm:flex-col md:flex-col sm:flex-col" >
+        {latestBlog.map((products)=>(
+          <div className="h-[493px] w-[370px] flex justify-around items-center flex-col xsm:w-[280px]" key={products.id}>
+             <Image height={370} width={370} alt="bedroom" src={products.image}></Image>
+             <span className="flex justify-around items-center">
+               <p className="flex">
+                <FaPenNib className="text-[#FB2E86]"/>
+                SaberAli
+              </p> 
+              <p className="flex">
+                <FaRegCalendarAlt className="text-[#FFA454]"/>
+                21 August,2020
+              </p>
+             </span>
+              <h5 className="text-[#151875] font-semibold">{products.heading}</h5>
+              <p className="text-[#72718F]">More off this less hello samlande lied much <br />
+              over tightly circa horse taped mightly</p>
+              <Link href={"/"} className="text-[#151875] underline decoration-[#151875]">Read More</Link>
+          </div>
+
+        ))}
+      </div>
      </section>
    </main>
   );
