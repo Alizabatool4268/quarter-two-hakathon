@@ -277,7 +277,7 @@ export default function Home() {
         {latestBlog.map((products)=>(
           <div className="h-[493px] w-[370px] flex justify-around items-center flex-col xsm:w-[280px]" key={products.id}>
              <Image height={370} width={370} alt="bedroom" src={products.image}></Image>
-             <span className="flex justify-around items-center">
+             <span className="flex justify-around items-center gap-1">
                <p className="flex">
                 <FaPenNib className="text-[#FB2E86]"/>
                 SaberAli

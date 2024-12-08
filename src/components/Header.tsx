@@ -27,13 +27,13 @@ function Header() {
             </span>
              <span className='flex items-center'>
                 <p className='xsm:hidden ssm:hidden'>Login</p> 
-                <FiUser />
+                <Link href={"/Login"}><FiUser /></Link>
             </span>
              <span className='flex items-center justify-center'>
                 <p className='xsm:hidden ssm:hidden'>Wishlist</p> 
                 <IoIosHeartEmpty/> 
             </span>
-             <span><LuShoppingCart/></span>
+             <span><Link href={"/Cart"}><LuShoppingCart/></Link></span>
           </div>
         </div>
         <nav className=' h-[100px] flex justify-evenly items-center ssm:flex-col msm:flex-col xsm:flex-col sm:flex-col'>
@@ -45,7 +45,7 @@ function Header() {
                 <Link href={"/"} className='hover:text-[#FB2E86]'>Products </Link>
                 <Link href={"/Blog"} className='hover:text-[#FB2E86]'>Blog  </Link>
                 <Link href={"/Shop"} className='hover:text-[#FB2E86]'>Shop </Link>
-                <Link href={"/"} className='hover:text-[#FB2E86]'>Contact </Link>
+                <Link href={"/Contact"} className='hover:text-[#FB2E86]'>Contact </Link>
              </div>
             </div>
             <div className='flex'>

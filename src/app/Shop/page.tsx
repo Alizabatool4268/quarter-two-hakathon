@@ -58,7 +58,7 @@ function page() {
          lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 sm:grid-cols-2 sm:grid-rows-5 
          msm:grid-cols-1 msm:grid-rows-12 ssm:grid-cols-1 ssm:grid-rows-12 xsm:grid-cols-1 xsm:grid-rows-12'>
            {shop.map((products)=>(
-             <div className='h-[270px] w-[370px] flex items-center justify-center flex-col'>
+             <div className='h-[270px] w-[370px] flex items-center justify-center flex-col' key={products.id}>
                <span className='w-[370px] bg-[#F6F5FF] flex justify-center items-center'>
                <Image height={169} width={169} alt="product" src={products.image}></Image>
                </span>
@@ -78,8 +78,8 @@ function page() {
            ))}
         </div>
         <section className="flex justify-center items-center w-full">
-       <Image height={100} width={500} alt="brands" src={"/Images/image 1174.png"}></Image>
-     </section>
+          <Image height={100} width={500} alt="brands" src={"/Images/image 1174.png"}></Image>
+        </section>
     </section>
   )
 }
